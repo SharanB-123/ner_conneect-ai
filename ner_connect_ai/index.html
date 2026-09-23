@@ -1,0 +1,638 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+    >
+
+    <title>NER Connect AI</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+    <link
+         rel="stylesheet"
+         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        /> 
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <b>
+            ◈ NER Connect
+            <span>AI</span>
+        </b>
+
+        <nav>
+
+            <a href="#features">
+                Features
+            </a>
+
+            <a href="#how">
+                How it works
+            </a>
+
+            <a href="#impact">
+                Impact
+            </a>
+
+        </nav>
+
+        <button onclick="openDemo()">
+            Launch Platform
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero">
+
+            <div>
+
+                <small>
+                    SIH 2026 · SIH26002 · SOFTWARE
+                </small>
+
+                <h1>
+                    Smarter logistics.
+                    <br>
+
+                    <em>
+                        Connected North East.
+                    </em>
+                </h1>
+
+                <p>
+                    AI-powered route optimization,
+                    accessibility intelligence and
+                    risk-aware logistics for the eight
+                    states of India's North Eastern Region.
+                </p>
+
+                <button onclick="openDemo()">
+                    Explore Live Demo →
+                </button>
+
+            </div>
+
+
+            <!-- ================= MAP ================= -->
+
+            <div class="hero">
+                <div>
+
+                </div>
+                <div id ="map"></div>
+            </div>
+
+                <div class="maptop">
+
+                    LIVE NER INTELLIGENCE
+
+                    <i>
+                        ● Live
+                    </i>
+
+                </div>
+
+                <div class="route"></div>
+
+                <div class="pin a">
+                    G
+                </div>
+
+                <div class="pin b">
+                    I
+                </div>
+
+                <label class="ga">
+                    Guwahati
+                </label>
+
+                <label class="im">
+                    Imphal
+                </label>
+
+
+                <!-- Map Information Box -->
+
+                <div class="mapbox">
+
+                    <small>
+                        RECOMMENDED ROUTE
+                    </small>
+
+                    <strong>
+                        Guwahati → Imphal
+                    </strong>
+
+                    <div>
+                        7h 20m
+                        ·
+                        320 km
+                        ·
+                        <span>
+                            Low risk
+                        </span>
+                    </div>
+
+                    <hr>
+
+                    <small>
+                        AI ROUTE SCORE
+
+                        <b>
+                            91/100
+                        </b>
+                    </small>
+
+                    <div class="bar">
+                        <i></i>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATES ================= -->
+
+        <section class="states">
+
+            <span>
+                Built for
+            </span>
+
+            Assam ·
+            Arunachal Pradesh ·
+            Manipur ·
+            Meghalaya ·
+            Mizoram ·
+            Nagaland ·
+            Tripura ·
+            Sikkim
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section id="features">
+
+            <small>
+                CORE CAPABILITIES
+            </small>
+
+            <h2>
+                One platform. Every logistics decision.
+            </h2>
+
+
+            <div class="grid">
+
+                <!-- Feature 1 -->
+
+                <article>
+
+                    <b>
+                        ⌁
+                    </b>
+
+                    <h3>
+                        AI Route Optimization
+                    </h3>
+
+                    <p>
+                        Compare distance, ETA, cost,
+                        road conditions and risk to
+                        select the best route.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 2 -->
+
+                <article>
+
+                    <b>
+                        ◉
+                    </b>
+
+                    <h3>
+                        Accessibility Intelligence
+                    </h3>
+
+                    <p>
+                        Measure connectivity to healthcare,
+                        markets, schools, transport and
+                        emergency services.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 3 -->
+
+                <article>
+
+                    <b>
+                        △
+                    </b>
+
+                    <h3>
+                        Risk-Aware Routing
+                    </h3>
+
+                    <p>
+                        Factor rainfall, flood exposure,
+                        landslide risk and disruptions
+                        into recommendations.
+                    </p>
+
+                </article>
+
+
+                <!-- Feature 4 -->
+
+                <article>
+
+                    <b>
+                        ↗
+                    </b>
+
+                    <h3>
+                        Logistics Optimization
+                    </h3>
+
+                    <p>
+                        Optimize multi-stop deliveries,
+                        vehicle capacity, priority,
+                        fuel and cost.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section
+            id="how"
+            class="how"
+        >
+
+            <div>
+
+                <small>
+                    DECISION ENGINE
+                </small>
+
+                <h2>
+                    From raw data to a decision
+                    you can explain.
+                </h2>
+
+                <p>
+                    GIS, weather, terrain and logistics
+                    data are combined with AI and
+                    optimization algorithms.
+                </p>
+
+
+                <ol>
+
+                    <li>
+
+                        <b>
+                            01
+                        </b>
+
+                        Collect —
+                        Maps · Weather · Terrain · Infrastructure
+
+                    </li>
+
+
+                    <li>
+
+                        <b>
+                            02
+                        </b>
+
+                        Analyze —
+                        AI/ML · Risk · Accessibility
+
+                    </li>
+
+
+                    <li>
+
+                        <b>
+                            03
+                        </b>
+
+                        Optimize —
+                        Routes · Vehicles · Delivery Sequence
+
+                    </li>
+
+
+                    <li>
+
+                        <b>
+                            04
+                        </b>
+
+                        Explain —
+                        Score · Reason · Alternative
+
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+            <!-- ================= AI RECOMMENDATION ================= -->
+
+            <aside>
+
+                <small>
+                    AI RECOMMENDATION
+                </small>
+
+                <h3>
+                    Route A is the best option
+                </h3>
+
+                <p>
+                    Guwahati → Dimapur → Imphal
+                </p>
+
+                <strong>
+
+                    91
+
+                    <small>
+                        /100 overall score
+                    </small>
+
+                </strong>
+
+
+                <ul>
+
+                    <li>
+                        Lower landslide exposure
+                    </li>
+
+                    <li>
+                        Better emergency accessibility
+                    </li>
+
+                    <li>
+                        Expected delay 18 min lower
+                    </li>
+
+                </ul>
+
+
+                <button onclick="openDemo()">
+                    Open Route Optimizer
+                </button>
+
+            </aside>
+
+        </section>
+
+
+        <!-- ================= IMPACT ================= -->
+
+        <section id="impact">
+
+            <small>
+                REGIONAL IMPACT
+            </small>
+
+            <h2>
+                Designed for the realities
+                of the North East.
+            </h2>
+
+
+            <div class="stats">
+
+                <div>
+
+                    <b>
+                        8
+                    </b>
+
+                    <span>
+                        States supported
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <b>
+                        AI
+                    </b>
+
+                    <span>
+                        Explainable decisions
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <b>
+                        24/7
+                    </b>
+
+                    <span>
+                        Risk intelligence
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <b>
+                        ∞
+                    </b>
+
+                    <span>
+                        Scalable architecture
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CALL TO ACTION ================= -->
+
+        <section class="cta">
+
+            <div>
+
+                <small>
+                    SIH 2026 · TEAM PROJECT
+                </small>
+
+                <h2>
+                    Build a more connected
+                    North East.
+                </h2>
+
+            </div>
+
+            <button onclick="openDemo()">
+                Launch Demo →
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        ◈ NER Connect AI
+
+        <span>
+            SIH26002 · Smart Logistics &
+            Accessibility Intelligence
+        </span>
+
+    </footer>
+
+
+    <!-- ================= DEMO MODAL ================= -->
+
+    <div id="modal">
+
+        <div class="dialog">
+
+            <button
+                class="x"
+                onclick="closeDemo()"
+            >
+                ×
+            </button>
+
+
+            <small>
+                PLATFORM PREVIEW
+            </small>
+
+            <h2>
+                Route Intelligence Demo
+            </h2>
+
+
+            <!-- ================= FORM ================= -->
+
+            <div class="form">
+
+                <label>
+
+                    Origin
+
+                    <input
+                        id="o"
+                        value="Guwahati"
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Destination
+
+                    <input
+                        id="d"
+                        value="Imphal"
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Vehicle
+
+                    <select id="v">
+
+                        <option>
+                            Medium Truck
+                        </option>
+
+                        <option>
+                            Heavy Truck
+                        </option>
+
+                        <option>
+                            Emergency Vehicle
+                        </option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+            <button onclick="optimize()">
+                Optimize Route
+            </button>
+
+
+            <div id="result"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
